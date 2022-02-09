@@ -20,12 +20,12 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
 int main() 
 {
-  float distance, remaining;
-  float amount, remaining_amount;
-  printf("Enter distance travelled:");
+  float distance, remaining;            //defining variables
+  float amount, remaining_amount, total;
+  printf("Enter distance travelled:");  //Taking inputs
   scanf("%f", &distance);
 
-  if(distance <= 30)
+  if(distance <= 30) //Nested if else statement to calculate cost
   {
     amount = distance * 50;
     printf("Total amount = %.2f", amount);
@@ -38,6 +38,10 @@ int main()
     total = amount + remaining_amount;
     printf("Total amount = %.2f", total);
   }
+  else
+  {
+    printf("Invalid value");
+  }
   
-  return 0;
+  return 0; //End of function
 }
