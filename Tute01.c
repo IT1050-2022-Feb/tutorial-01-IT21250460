@@ -4,7 +4,19 @@
 
 #include <stdio.h>
 
-int main() {
+int main() 
+{
+  int mark1, mark2; //Defining variables
+   int total = 0;
+   int average = 0;
+   printf("Enter mark for subject 1 - ");  //Taking inputs
+   scanf("%d", &mark1);
+   printf("Enter mark for subject 2 - ");
+   scanf("%d", &mark2);
+   total = mark1 + mark2;  /*Calculating total
+                                  and average*/
+   average = total / 2.0;
+   printf("Average mark = %d", average);
   
   return 0;
 }
